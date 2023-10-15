@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+@layer components {
+  .chat-box {
+    @apply rounded-lg  px-5 py-2  flex items-center justify-center space-x-2
+    hover:bg-gray-400 hover:text-white cursor-pointer transition-all duration-300 ease-in-out;
+  }
+}
